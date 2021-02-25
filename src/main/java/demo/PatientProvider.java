@@ -52,7 +52,7 @@ public class PatientProvider implements IResourceProvider {
 
   @Create()
   public MethodOutcome createPatient(@ResourceParam Patient thePatient) {
-
+//Identifier vorhanden?
     if (thePatient.getIdentifierFirstRep().isEmpty()) {
       throw new UnprocessableEntityException("No identifier supplied");
     }

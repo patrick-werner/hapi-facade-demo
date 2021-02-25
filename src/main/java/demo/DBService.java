@@ -23,7 +23,7 @@ public class DBService {
   }
 
   public static Encounter getEncounter(String Id) {
-    return encounters.get("Id");
+    return encounters.get(Id);
   }
 
 }
